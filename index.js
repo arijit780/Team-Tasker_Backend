@@ -1,11 +1,11 @@
 const express = require('express');
 const dotenv = require('dotenv')//secured rakhunga data ...git wagera main upload nhi hoga
 const app = express();//creation of server
-const cors = require("cors");
-const cookieParser = require('cookie-parser');
-const port = process.env.PORT || 5000; 
+const cors = require("cors");//cross origin resource sharing...galat FE agara request response karta hain toh error dega
+const cookieParser = require('cookie-parser');//sends cookies securely from BE to FE
+const port = process.env.PORT || 5000; //port is like somewhere where we would deploy our BE
 
-const whitelist = ['http://localhost:3000',"https://teamtasker.netlify.app"]
+const whitelist = ['http://localhost:3000',"https://teamtasker.netlify.app"]//only this 2 will send you requests i.e FE to secure data
 const corsOptions = {
   credentials: true,
   origin: (origin, callback) => {
