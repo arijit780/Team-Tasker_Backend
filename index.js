@@ -1,6 +1,6 @@
 const express = require('express');
-const dotenv = require('dotenv')
-const app = express();
+const dotenv = require('dotenv')//secured rakhunga data ...git wagera main upload nhi hoga
+const app = express();//creation of server
 const cors = require("cors");
 const cookieParser = require('cookie-parser');
 const port = process.env.PORT || 5000; 
